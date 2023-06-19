@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+    gap: 10%;
+    border-bottom: .1em solid #303030;
+}
+
+#menu-principal{
+    display: block;
+    position: relative;
+}
+
+#menu-principal ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#menu-principal ul .menu_item{
+    text-align: center;
+    display: block;
+    position: relative;
+    padding: 1em 2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu-principal ul .menu_item:hover{
+    background-color: #fff;
+    color: #303030;
+}
+
+#form_pesquisa{
+    color: #fff;
+    padding: .05%;
+}
+
+#form_pesquisa input{
+    background-color: #303030;
+    border: .2em solid #fff;
+    color: #fff;
+    padding: 10px;
+}
