@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Montserrat:wght@300&family=Nunito:wght@700&family=Roboto:wght@100;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #006EFF;
+    z-index: 1;
+    width: 100%;
+}
+section{
+    padding: 0 2%;
+}
+
+#menu-principal{
+    display: block;
+    position: relative;
+}
+
+#menu-principal ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#menu-principal ul .menu_item{
+    text-align: center;
+    display: block;
+    position: relative;
+    font-size: 1.2em;
+    padding: 1.1em 2em;
+    color: #FDB509;
+    text-decoration: none;
+}
+
+#menu-principal ul .menu_item:hover{
+    color: #006EFF;
+    background-color: #FDB509;
+}
+
+#form_pesquisa{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: row;
+    color: #FDB509;
+    width: 100%;
+}
+
+#form_pesquisa input{
+    background: none;
+    border: .2em solid #FDB509;
+    color: #FDB509;
+    padding: 5px 10px;
+    border-radius: 1em;
+    margin-left: 2%;
+    outline-style: none;
+}
+
+#form_pesquisa input::placeholder{
+    color: #ffd36c;
+}
+
+
+main{
+    display: block;
+    background-color: #e9e9e9;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6% 4% 0% 4%;
+}
+
+#titulo{
+    display: block;
+    position: relative;
+    font-size: 1.3em;
+    text-align: center;
+    color: #006EFF;
+}
+
+#conteudo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    padding: 2% 10%;
+    gap: 6%;
+}
+
+.elementos{
+    display: block;
+    position: relative;
+    width: 20%;
+    border-radius: .8em;
+    background-color: #fff;
+    box-shadow: -0.1em 0.1em .3em #000;
+    transition: 0.5s;
+    margin-bottom: 4%;
+}
+
+.elementos a{
+    color: #000;
+    border-radius: .8em;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 4%;
+    text-decoration: none;
+}
+
+.elementos:hover{
+    -webkit-transform: scale(1.05);
+   transform: scale(1.05);
+    box-shadow: -0.3em 0.3em .8em #000;
+}
+
+.imagem{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: .2em solid #e9e9e9;
+}
+
+.informacao{
+    display: block;
+    position: absolute;
+}
+
+.descricao{
+    text-align: center;
+    margin-top: 5%;
+    font-size: .8em;
+}
+
+.descricao2{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+.imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    transition: transform .5s ease;
+}
+
+/*Separado para o Main*/
+
+
+footer{
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #006EFF;
+    color: #FDB509;
+}
+
+#orcamento{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    gap: 4%;
+    width: 100%;
+    margin-top: 1%;
+}
+
+.dados_usuario, #produtos, #btn_rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: relative;
+}
+
+footer label{
+    margin-bottom: 1%;
+    color: #fff;
+}
+
+footer input{
+    padding: 2% 4%;
+    outline: none;
+    background: none;
+    border: .15em solid #fff;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    border-radius: .6em;
+}
+
+#produtos label{
+    margin-bottom: .1em;
+}
+
+footer textarea{
+    padding: 1% 2%;
+    font-size: 1em;
+    background: none;
+    border: .2em solid #fff;
+    color: #fff;
+    outline: none;
+    border-radius: .8em;
+}
+
+footer input::placeholder, footer textarea::placeholder{
+    color: #c7c7c7;
+}
+
+.dados_usuario{
+    width: 15%;
+}
+
+#produtos{
+    width: 40%;
+}
+
+.elementos label{
+    margin-bottom: 1%;
+}
+
+#btn_rodape button{
+    font-size: 1em;
+    padding: 8px 15px;
+    border: none;
+    border-radius: .8em;
+    color: #fff;
+    background-color: #FDB509;
+    transition: .3s;
+}
+
+#btn_rodape button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
