@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/contato.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header id="navbar">
+        <section>
+            <img src="../img/logo.png" alt="">
+        </section>
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="../index.html" class="menu_item">Home</a></li>
+                <li><a href="materiais.html" class="menu_item">Materiais</a></li>
+                <li><a href="ferramentas.html" class="menu_item">Ferramentas</a></li>
+                <li><a href="contato.html" class="menu_item">Contato</a></li>
+            </ul>
+        </nav>
+        <section id="pesquisar">
+            <form action="#" id="form_pesquisa">
+                <label for="idPesquisa">Pesquisa:</label>
+                <input type="search" name="nmPesquisa" id="idPesquisa" placeholder="Pesquisar...">
+            </form>
+        </section>
+    </header>
+
+    <main>
+        <form action="#" id="form_contato">
+            <div id="titulo_form">
+                <h1>Contato</h1>
+            </div>
+            <section id="informacoes">
+                <div id="dados_nome">
+                    <div class="nome">
+                        <label for="id_nome">Nome:</label>
+                        <input type="text" name="txt_nome" id="id_nome" placeholder="Digite o Nome">
+                    </div>
+                    <div class="nome">
+                        <label for="id_sobrenome">Sobrenome:</label>
+                        <input type="text" name="txt_sobrenome" id="id_sobrenome" placeholder="Digite o Sobrenome">
+                    </div>
+                </div>
+
+                <div id="dados_email">
+                    <label for="id_nome">Email:</label>
+                    <input type="email" name="txt_email" id="id_email" placeholder="Digite o Email">
+                </div>
+            </section>
+            <section id="mensagem">
+                <label for="txt_duvida">Mensagem:</label>
+                <textarea name="txt_mensagem" id="id_mensagem" rows="6" placeholder="Digite o motivo do Contato..."></textarea>
+            </section>
+            <button id="btn">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <div id="titulo_rodape">
+            <h1>ORÇAMENTO</h1>
+        </div>
+        <form id="orcamento">
+            <div class="dados_usuario">
+                <label for="idOrc_nome">Nome</label>
+                <input type="text" name="orc_nome" id="idOrc_nome" placeholder="Digite o Nome">
+            </div>
+            <div class="dados_usuario">
+                <label for="idOrc_email">Email</label>
+                <input type="orc_email" name="idOrc_email" id="idOrc_nome" placeholder="Digite o Email">
+            </div>
+            <div id="produtos">
+                <label for="idOrc_produtos">Produtos</label>
+                <textarea name="orc_produtos" id="idOrc_produtos" rows="1" placeholder="Digite os Produtos para op Calculo do Orçamento"></textarea>
+            </div>
+            <div id="btn_rodape">
+                <button>Enviar</button>
+            </div>
+        </form>
+    </footer>
+</body>
+</html>
