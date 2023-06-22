@@ -7,7 +7,10 @@
     <title>Loja de Construção</title>
 </head>
 <body>
-    <header>
+    <header id="navbar">
+        <section>
+            <img src="img/logo.png" alt="">
+        </section>
         <nav id="menu-principal">
             <ul>
                 <li><a href="index.html" class="menu_item">Home</a></li>
@@ -16,18 +19,56 @@
                 <li><a href="paginas/contato.html" class="menu_item">Contato</a></li>
             </ul>
         </nav>
-        <form action="#" id="form_pesquisa">
-            <label for="nmPesquisa">Pesquisa</label>
-            <input type="search" name="nmPesquisa" id="idPesquisa" placeholder="Pesquisar...">
-        </form>
+        <section id="pesquisar">
+            <form action="#" id="form_pesquisa">
+                <label for="idPesquisa">Pesquisa:</label>
+                <input type="search" name="nmPesquisa" id="idPesquisa" placeholder="Pesquisar...">
+            </form>
+        </section>
     </header>
 
     <main>
-        <!-- Conteúdo Principal -->
+        <div id="titulo">
+            <img src="img/banner_apresentacao.png" alt="banner de Apresentação">
+        </div>
+
+        <div id="conteudo">
+            <section id="sobre">
+                <div id="infos">
+                    <h1>Aqui na Casa & Obras oferecemos os Melhores Serviços</h1>
+                    <p>Contamos com diversos produtos de qualidade, visando sempre proporcionar a nossos clientes o maior nível de satisfação possível.</p>
+                    <p>Em nossas lojas temos diversos materiais de construção, sendo esses de marcas referentes no mercado, tanto em relação a durabilidade quanto em relação a praticidade e custo.</p>
+                    <p>Contamos também com uma equipe bastante equipada e muito bem treinada com bastante prática, buscando sempre oferecer um trabalho exelente ao clientes.</p>
+                    <p>Ao lado está um de nossos trabalhos, que nos dão o maior orgulho, já que nosssos clientes ficaram super satisfeitos com o resultado da casa, simples e elegante ao mesmo tempo.</p>
+                </div>
+                <div id="imagem">
+                    <img src="img/trabalhos.png" alt="">
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <!-- Conteúdo do Rodapé -->
+        <div id="titulo_rodape">
+            <h1>ORÇAMENTO</h1>
+        </div>
+        <form id="orcamento">
+            <div class="dados_usuario">
+                <label for="idOrc_nome">Nome</label>
+                <input type="text" name="orc_nome" id="idOrc_nome" placeholder="Digite o Nome">
+            </div>
+            <div class="dados_usuario">
+                <label for="idOrc_email">Email</label>
+                <input type="orc_email" name="idOrc_email" id="idOrc_nome" placeholder="Digite o Email">
+            </div>
+            <div id="produtos">
+                <label for="idOrc_produtos">Produtos</label>
+                <textarea name="orc_produtos" id="idOrc_produtos" rows="1" placeholder="Digite os Produtos para op Calculo do Orçamento"></textarea>
+            </div>
+            <div id="btn_rodape">
+                <button>Enviar</button>
+            </div>
+        </form>
     </footer>
 </body>
 </html>
